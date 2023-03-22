@@ -1,0 +1,29 @@
+body {
+    background-color: #3A424A;
+}
+p{
+    margin: 0;
+    padding: 0;
+}
+
+.c-form-nav {
+    align-items: center;
+    position: relative;
+}
+
+.c-form-nav-input {
+    background-color: #484E5C;
+    outline: none;
+    border: none;
+}
+
+.c-form-nav-icon {
+    position: absolute;
+    right: 1rem;
+}
+
+@media (max-width:568px) {
+    .c-form-nav {
+        display: none !important;
+    }
+}

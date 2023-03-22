@@ -1,4 +1,4 @@
-const input = document.querySelector("input");
+const input = document.querySelector(".f-input-task");
 const addBtn = document.querySelector(".btn-add");
 const ul = document.querySelector(".ul-todo");
 const empty = document.querySelector(".empty");
@@ -10,6 +10,7 @@ addBtn.addEventListener("click", (e) => {
   const text = input.value;
 
   if (text != "") {
+    console.log("hola")
     const li = document.createElement("li");
     const p = document.createElement("p");
     p.textContent = text;
@@ -21,6 +22,7 @@ addBtn.addEventListener("click", (e) => {
     input.value = "";
     empty.style.display = "none";
   }else if (text == ""){
+    console.log("xd")
     error.classList.remove("vacio");
   }
 });

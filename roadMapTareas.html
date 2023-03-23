@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Icons"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Icons+Outlined"
+    />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>nav-bar</title>
+  </head>
+  <body>
+    <!-- Contenedor de Roadmap -->
+    <div class="container-fluid d-flex flex-column bg-dark">
+      <!-- Nombre de la función -->
+      <div>
+        <h1 class="text-light">Roadmap de Tareas</h1>
+      </div>
+      <!-- Tabla de Vista, filter, sort, search -->
+      <div class="container-fluid d-flex">
+        <!-- Vista, tabla o lista -->
+        <div class="d-flex flex-grow-1">
+          <button class="btn btn-dark">Vista de Tabla</button>
+          <button class="btn btn-dark">+</button>
+        </div>
+        <!-- Filter, Sort, Search -->
+        <div class="d-flex flex-grow-1 justify-content-end pe-5">
+          <button class="btn btn-dark">Filter</button>
+          <button class="btn btn-dark">Sort</button>
+          <button class="btn btn-dark">Search</button>
+        </div>
+        <!-- Expand, dots, new -->
+        <div class="d-flex justify-content-end flex-grow-2">
+          <button class="btn btn-dark">Expand</button>
+          <button class="btn btn-dark">dots</button>
+          <button class="btn btn-dark">new</button>
+        </div>
+      </div>
+      <!-- Nombre de la tabla(opcional) -->
+      <div class="d-flex">
+        <h1 class="text-light">NombredeTabla</h1>
+        <button class="btn btn-dark">dots</button>
+      </div>
+      <!-- Linea de Filtros aplicados-->
+      <div class="d-flex">
+        <button class="btn btn-dark">Filtro</button>
+      </div>
+      <!-- Tabla -->
+      <div class="table-responsive dg-corner-border dg-nowrap">
+        <table class="table table-hover dg-card-color dg-corner-border">
+          <!-- Cabecera -->
+          <thead>
+            <tr class="text-light dg-no-border-table">
+              <th scope="col">#</th>
+              <th scope="col">Tarea</th>
+              <th scope="col">Estado</th>
+              <th scope="col">Tipo</th>
+              <th scope="col">Fecha de inicio</th>
+              <th scope="col">Fecha de entrega</th>
+              <th scope="col">Encargado</th>
+            </tr>
+          </thead>
+          <!-- Cuerpo-->
+          <tbody>
+            <!-- Fila 1 -->
+            <tr class="text-light dg-no-border-table">
+              <th style="border-bottom: none;" scope="row">1</th>
+              <td>Crear HTML y CSS</td>
+              <td>Completado</td>
+              <td>Frontend</td>
+              <td>22-Mar-2023</td>
+              <td>25-Mar-2023</td>
+              <td style="border-bottom: none;">Roberto</td>
+            </tr>
+            <!-- Fila 2 -->
+            <tr class="text-light dg-no-border-table">
+              <th scope="row">1</th>
+              <td>Crear HTML y CSS</td>
+              <td>Completado</td>
+              <td>Frontend</td>
+              <td>22-Mar-2023</td>
+              <td>25-Mar-2023</td>
+              <td style="border-bottom: none;">Roberto</td>
+            </tr>
+          
+          </tbody>
+        </table>
+      </div>
+
+    </div>
+
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

@@ -46,7 +46,7 @@ h6 {
 }
 
 .navbar-lateral {
-  width: 5rem;
+  width: 3.8rem;
   height: 100%;
   min-height: 100vh;
   background-color: var(--Card);
@@ -95,9 +95,12 @@ h6 {
   }
 }
 
-@media(min-width:798px) {
+
+@media(min-width:998px) {
+
   .navbar-lateral:hover {
-    width: 12rem;
+    width: 13rem;
+    transition: all .5s ease;
   }
 
   .navbar-lateral:hover~.section-space-work {
@@ -129,4 +132,147 @@ h6 {
   .form-control {
     width: 50%;
   }
+}
+
+
+.lateral-navbar {
+  background: #363b45;
+  width: 3.8rem;
+  position: absolute;
+  height: 100vh;
+  left: 0;
+  transition: width 0, 2s linear;
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0, 1);
+}
+
+@media (min-width:992px) {
+  .lateral-navbar:hover {
+    width: 13rem;
+    transition: all .5s ease;
+  }
+
+}
+
+
+
+.main-logo {
+  transition: all 0, 5s ease;
+  margin-left: 10px;
+}
+
+.main-logo .logo-navbar {
+  width: 45px;
+  height: 45px;
+}
+
+.link-lateral-navbar {
+  color: #8d95a5;
+  width: 300px;
+  padding: 10px;
+}
+
+.material-icons {
+  width: 40px;
+  height: 40px;
+  padding-top: 3px;
+  border: solid 1px #0ab3c2;
+  color: #0ab3c2;
+  border-radius: 10px;
+  font-size: 30px;
+}
+
+.material-icons-outlined {
+  width: 40px;
+  height: 40px;
+  padding-top: 3px;
+  font-size: 30px;
+}
+
+.name-option {
+  top: -10px;
+}
+
+.lateral-navbar:hover body {
+  background: black;
+  opacity: .5;
+}
+
+.logout {
+  bottom: 0;
+}
+
+.title-taks-f {
+  color: darkslategrey;
+}
+
+.to-do-form {
+  width: 30%;
+}
+
+.f-input-task {
+  padding: 15px 10px;
+  outline: none;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-right: none;
+  width: 400px;
+}
+
+.li-container {
+  color: darkslategray;
+}
+
+.space-li {
+  list-style: none;
+  background-color: lightgray;
+  border-radius: 10px;
+  margin-top: 15px;
+  display: flex;
+}
+
+.to-do-work {
+  margin: 0;
+  padding: 15px;
+  width: 100%;
+}
+
+.btn-delete {
+  margin-left: auto;
+  border: none;
+  background-color: #e31746;
+  color: white;
+  font-weight: bold;
+  padding: 5px 10px;
+  outline: none;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  width: 10%;
+  font-size: 1.2em;
+}
+
+.btn-delete:hover {
+  cursor: pointer;
+  background-color: darkred;
+}
+
+.btn-add {
+  padding: 5px 15px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  background-color: teal;
+  font-size: 1.4rem;
+  outline: none;
+}
+
+.btn-add:hover {
+  cursor: pointer;
+  background-color: darkcyan;
+}
+
+.empty {
+  color: darkslategrey;
+}
+
+.vacio {
+  display: none;
 }

@@ -73,14 +73,14 @@ h1 {
   width: 30%;
 }
 
-input {
+/* input {
   padding: 15px 10px;
   outline: none;
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
   border-right: none;
   width: 400px;
-}
+} */
 
 .li-container {
   color: darkslategray;
@@ -167,3 +167,31 @@ p {
     display: none !important;
   }
 }
+
+
+/*********************************
+  Estilos Calendar
+**********************************/
+
+
+/* .k-container-calendar {
+  margin-left: 100px;
+  margin-top: 10px;
+} */
+
+.k-event-time {
+  color: #363B45;
+}
+
+.bg-card {
+  background-color: #363B45 !important;
+}
+
+.k-checkbox {
+  width: 20px;
+}
+
+.k-checkbox:checked {
+  background-color: #00D2E5;
+}
+

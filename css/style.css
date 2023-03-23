@@ -11,25 +11,26 @@ body {
   background: #484e5c;
 }
 
-nav {
+.lateral-navbar {
   background: #363b45;
-  width: 70px;
+  width: 220px;
+  height: 100vh;
   left: 0;
   transition: width 0, 2s linear;
   box-shadow: 0 20px 30px rgba(0, 0, 0, 0, 1);
 }
 
-.logo {
+.main-logo {
   transition: all 0, 5s ease;
   margin-left: 10px;
 }
 
-.logo img {
+.main-logo .logo-navbar {
   width: 45px;
   height: 45px;
 }
 
-a {
+.link-lateral-navbar {
   color: #8d95a5;
   width: 300px;
   padding: 10px;
@@ -52,28 +53,28 @@ a {
   font-size: 30px;
 }
 
-.nav-item {
+.name-option {
   top: -10px;
 }
 
-nav:hover {
-  width: 200px;
-  transition: all 0, 5s ease;
+.lateral-navbar:hover body{
+  background: black;
+  opacity: .5;
 }
 
 .logout {
   bottom: 0;
 }
 
-h1 {
+.title-taks-f {
   color: darkslategrey;
 }
 
-.container {
+.to-do-form {
   width: 30%;
 }
 
-input {
+.f-input-task {
   padding: 15px 10px;
   outline: none;
   border-top-left-radius: 5px;
@@ -86,7 +87,7 @@ input {
   color: darkslategray;
 }
 
-.ul-todo > li {
+.space-li {
   list-style: none;
   background-color: lightgray;
   border-radius: 10px;
@@ -94,7 +95,7 @@ input {
   display: flex;
 }
 
-li p {
+.to-do-work {
   margin: 0;
   padding: 15px;
   width: 100%;

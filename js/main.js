@@ -13,6 +13,7 @@ addBtn.addEventListener("click", (e) => {
     console.log("hola")
     const li = document.createElement("li");
     const p = document.createElement("p");
+
     p.textContent = text;
 
     li.appendChild(p);

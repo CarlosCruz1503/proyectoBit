@@ -168,16 +168,11 @@ p {
   }
 }
 
+/*╭︻╦̵̵͇̿̿̿̿╤───
+  ╰┈➤ CALENDARIO
 
-/*********************************
-  Estilos Calendar
-**********************************/
+ ⎝𒆜⪼༒🅳🅴🆄🅷🆂༒⪻𒆜⎠ */
 
-
-/* .k-container-calendar {
-  margin-left: 100px;
-  margin-top: 10px;
-} */
 
 .k-event-time {
   color: #363B45;
@@ -194,4 +189,72 @@ p {
 .k-checkbox:checked {
   background-color: #00D2E5;
 }
+
+.k-container-day {
+  height: 100px;
+
+}
+
+.k-event-calendar {
+  margin-top: -95px;
+}
+
+.k-margin-0 {
+  margin-bottom: -22px;
+}
+
+.k-border-calendar {
+  border: 1px solid #3A424A;
+}
+
+
+/*╭︻╦̵̵͇̿̿̿̿╤───
+  ╰┈➤ FONTS
+
+ ⎝𒆜⪼༒🅳🅴🆄🅷🆂༒⪻𒆜⎠ */
+
+.bg-primary {
+  background-color: #00D2E5 !important;
+}
+
+.bg-secundary {
+  background-color: #0095FF;
+}
+
+.bg-tertiary {
+  background-color: #F36ED6;
+}
+
+.bg-quaternary {
+  background-color: #F39E6E;
+}
+
+.bg-quinary {
+  background-color: #FF3D71;
+}
+
+.bg-senary {
+  background-color: #A56EF3;
+}
+
+.bg-septenary {
+  background-color: #00E096;
+}
+
+.bg-body {
+  background-color: #3A424A;
+}
+
+.text-iconos {
+  color: #8D95A5;
+}
+
+.text-notificaciones {
+  color: #D1D5DB;
+}
+
+.text-parrafos {
+  color: #F1F2F4;
+}
+
 

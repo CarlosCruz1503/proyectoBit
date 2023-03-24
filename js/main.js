@@ -29,7 +29,7 @@ addBtn.addEventListener("click", (e) => {
   }
 });
 
-if(empty.length==1){
+if(empty.length=1){
   empty.style.display = "block";
 }
 
@@ -48,13 +48,12 @@ function addDeleteBtn() {
     const item = e.target.parentElement;
     ul.removeChild(item);
 
-    const items = document.querySelectorAll("li");
+    const items = document.querySelectorAll(".space-li");
 
-    console.log({items})
+    console.log(items);
 
     if (items.length === 0) {
       empty.style.display = "block";
-      document.getElementById('empty').innerHTML = '<p>No tienes tareas pendientes.</p>';
     }
   });
 

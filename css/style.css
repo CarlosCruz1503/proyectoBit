@@ -1,3 +1,20 @@
+:root {
+  --Primary: #00D2E5;
+  --Secundary: #0095FF;
+  --Tertiary: #F36ED6;
+  --Quaternary: #F39E6E;
+  --Senary: #A56EF3;
+  --Body: #3A424A;
+  --Card: #363B45;
+  --Vacios: #5E6E78;
+  --Iconos: #8D95A5;
+  --Notificaciones: #D1D5DB;
+  --Light: #FFFFFF;
+  --Parrafos: #F1F2F4;
+  --Quinary: #FF3D71;
+  --Septenary: #00E096;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -11,28 +28,163 @@ body {
   background: #484e5c;
 }
 
-nav {
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+.big-contaier {
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+}
+
+.navbar-lateral {
+  width: 3.8rem;
+  height: 100%;
+  min-height: 100vh;
+  background-color: var(--Card);
+}
+
+.section-space-work {
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+  background-color: var(--primary);
+}
+
+
+.c-form-nav {
+  align-items: center;
+  position: relative;
+}
+
+.me-2{
+  width: 20rem;
+}
+
+.c-form-nav-input {
+  background-color: #484E5C;
+  outline: white;
+  border: white 1px solid;
+}
+
+.c-form-nav-input::placeholder {
+  color: white;
+}
+
+.c-form-nav-icon {
+  position: absolute;
+  right: 1rem;
+}
+
+.background-navbar-superior {
+  background-color: var(--Card);
+  z-index: 10;
+}
+
+@media (max-width:998px) {
+  .c-nav-superior {
+    justify-content: space-between !important;
+  }
+
+  .c-form-nav {
+    display: none !important;
+  }
+}
+
+
+@media(min-width:998px) {
+
+  .navbar-lateral:hover {
+    width: 13rem;
+    transition: all .5s ease;
+  }
+
+  .navbar-lateral:hover~.section-space-work {
+    width: 100%;
+  }
+}
+
+@media (min-width: 998px) {
+  .navbar-expand-lg .navbar-collapse {
+    display: flex !important;
+    flex-basis: auto;
+    justify-content: space-around;
+  }
+}
+
+@media (max-width: 998px) {
+
+  .c-nav-superior {
+    gap: 1rem;
+  }
+
+  .c-nav-items-toogle {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin: 0.2rem;
+  }
+
+  .form-control {
+    width: 50%;
+  }
+}
+
+
+.lateral-navbar {
   background: #363b45;
-  width: 70px;
+  width: 3.8rem;
+  position: absolute;
+  height: 100vh;
   left: 0;
   transition: width 0, 2s linear;
   box-shadow: 0 20px 30px rgba(0, 0, 0, 0, 1);
 }
 
-.logo {
+@media (min-width:992px) {
+  .lateral-navbar:hover {
+    width: 13rem;
+    transition: all .5s ease;
+  }
+
+  .bit {
+    display: block;
+  }
+  }
+
+
+
+
+.main-logo {
   transition: all 0, 5s ease;
   margin-left: 10px;
 }
 
-.logo img {
+.main-logo .logo-navbar {
   width: 45px;
   height: 45px;
 }
 
-a {
+.link-lateral-navbar {
   color: #8d95a5;
   width: 300px;
   padding: 10px;
+}
+
+.link-lateral-navbar:hover{
+  color:#0ab3c2;
+}
+
+.color-blue{
+  color:#0ab3c2;
 }
 
 .material-icons {
@@ -52,28 +204,28 @@ a {
   font-size: 30px;
 }
 
-.nav-item {
+.name-option {
   top: -10px;
 }
 
-nav:hover {
-  width: 200px;
-  transition: all 0, 5s ease;
+.lateral-navbar:hover body {
+  background: black;
+  opacity: .5;
 }
 
 .logout {
   bottom: 0;
 }
 
-h1 {
+.title-taks-f {
   color: darkslategrey;
 }
 
-.container {
+.to-do-form {
   width: 30%;
 }
 
-input {
+.f-input-task {
   padding: 15px 10px;
   outline: none;
   border-top-left-radius: 5px;
@@ -86,7 +238,7 @@ input {
   color: darkslategray;
 }
 
-.ul-todo > li {
+.space-li {
   list-style: none;
   background-color: lightgray;
   border-radius: 10px;
@@ -94,7 +246,7 @@ input {
   display: flex;
 }
 
-li p {
+.to-do-work {
   margin: 0;
   padding: 15px;
   width: 100%;
@@ -141,32 +293,28 @@ li p {
   display: none;
 }
 
-p {
-  margin: 0;
-  padding: 0;
+/*Nicolas Habitos -----------------------------------------------------------------*/
+.N-bg-primero {
+  background-color: #8F91A2;
+}
+.N-bg-segundo {
+  background-color: #DCEDFF;
 }
 
-.c-form-nav {
-  align-items: center;
-  position: relative;
+.N-week_contenedor{
 }
-
-.c-form-nav-input {
-  background-color: #484e5c;
-  outline: none;
-  border: none;
+.N-aside_contenedor {
+  margin-left: 2rem;
 }
-
-.c-form-nav-icon {
-  position: absolute;
-  right: 1rem;
+.N-week_rectangle {
+  height: 3.5rem;
+  margin: .15rem;
 }
-
-@media (max-width: 568px) {
-  .c-form-nav {
-    display: none !important;
-  }
+.N-aside_rectangle {
+  height: 3.5rem;
+  margin: .5rem;
 }
+<<<<<<< HEAD
 
 
 
@@ -186,3 +334,8 @@ p {
 .dg-nowrap td{
   white-space:nowrap;
 }
+=======
+.N-aside_input {
+  height: 6rem;
+}
+>>>>>>> main

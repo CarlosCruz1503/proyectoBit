@@ -10,8 +10,8 @@ addBtn.addEventListener("click", (e) => {
   const text = input.value;
 
   if (text != "") {
-    console.log("hola")
     const li = document.createElement("li");
+    li.setAttribute("id", `task${Math.floor(Math.random() * 1000)}`)
     const p = document.createElement("p");
     p.textContent = text;
 
@@ -19,13 +19,19 @@ addBtn.addEventListener("click", (e) => {
     li.appendChild(addDeleteBtn());
     ul.appendChild(li);
 
+    p.className += "to-do-work ";
+    li.className += "space-li ";
+
     input.value = "";
     empty.style.display = "none";
   }else if (text == ""){
-    console.log("xd")
     error.classList.remove("vacio");
   }
 });
+
+if(empty.length=1){
+  empty.style.display = "block";
+}
 
 input.addEventListener("focus", (e)=>{
   error.classList.add("vacio");
@@ -42,7 +48,7 @@ function addDeleteBtn() {
     const item = e.target.parentElement;
     ul.removeChild(item);
 
-    const items = document.querySelectorAll("li");
+    const items = document.querySelectorAll(".space-li");
 
     if (items.length === 0) {
       empty.style.display = "block";

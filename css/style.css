@@ -65,6 +65,10 @@ h6 {
   position: relative;
 }
 
+.me-2{
+  width: 20rem;
+}
+
 .c-form-nav-input {
   background-color: #484E5C;
   outline: white;
@@ -151,7 +155,11 @@ h6 {
     transition: all .5s ease;
   }
 
-}
+  .bit {
+    display: block;
+  }
+  }
+
 
 
 
@@ -169,6 +177,14 @@ h6 {
   color: #8d95a5;
   width: 300px;
   padding: 10px;
+}
+
+.link-lateral-navbar:hover{
+  color:#0ab3c2;
+}
+
+.color-blue{
+  color:#0ab3c2;
 }
 
 .material-icons {

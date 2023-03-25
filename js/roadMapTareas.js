@@ -74,22 +74,80 @@ document.getElementById("tareaasc").addEventListener('click', function(){
   document.getElementById("indicadorFiltro").innerHTML =  '<button class="btn btn-primary ms-5">Tarea Asc</button>'; 
 });
 
-// Función que espera al click de sort.estado y reordena la vista
-// document.getElementById("tareades").addEventListener('click', function(){
+// Función que espera al click de sort.estado y reordena la vista WIP porque no se como hacerlo
+// document.getElementById("estadodes").addEventListener('click', function(){
 //   actualizarTabla();
-//   myTasks.sort((a, b) => (a.name > b.name) ? 1 : -1);
+//   myTasks.sort((a, b) => (a.state > b.state) ? 1 : -1);
 //   imprimirTabla();
 //   document.getElementById("indicadorFiltro").innerHTML =  '<button class="btn btn-primary ms-5">Tarea Desc</button>'; 
 // });
 
-// document.getElementById("tareaasc").addEventListener('click', function(){
+// document.getElementById("estadoasc").addEventListener('click', function(){
 //   actualizarTabla();
-//   myTasks.sort((a, b) => (a.name < b.name) ? 1 : -1);
+//   myTasks.sort((a, b) => (a.state < b.state) ? 1 : -1);
 //   imprimirTabla();
 //   document.getElementById("indicadorFiltro").innerHTML =  '<button class="btn btn-primary ms-5">Tarea Asc</button>'; 
 // });
 
-console.log(typeof(myTasks[0]["state"]));
+// Función que espera al click de sort.Tipo y reordena la vista
+document.getElementById("tipodes").addEventListener('click', function(){
+  actualizarTabla();
+  myTasks.sort((a, b) => (a.typeOfTask > b.typeOfTask) ? 1 : -1);
+  imprimirTabla();
+  document.getElementById("indicadorFiltro").innerHTML =  '<button class="btn btn-primary ms-5">Tipo Desc</button>'; 
+});
+
+document.getElementById("tipoasc").addEventListener('click', function(){
+  actualizarTabla();
+  myTasks.sort((a, b) => (a.typeOfTask < b.typeOfTask) ? 1 : -1);
+  imprimirTabla();
+  document.getElementById("indicadorFiltro").innerHTML =  '<button class="btn btn-primary ms-5">Tipo Asc</button>'; 
+});
+
+// Función que espera al click de sort.Fechadeinicio y reordena la vista
+document.getElementById("fechaindes").addEventListener('click', function(){
+  actualizarTabla();
+  myTasks.sort((a, b) => (a.startDate > b.startDate) ? 1 : -1);
+  imprimirTabla();
+  document.getElementById("indicadorFiltro").innerHTML =  '<button class="btn btn-primary ms-5">Fecha de Inicio Desc</button>'; 
+});
+
+document.getElementById("fechainasc").addEventListener('click', function(){
+  actualizarTabla();
+  myTasks.sort((a, b) => (a.startDate < b.startDate) ? 1 : -1);
+  imprimirTabla();
+  document.getElementById("indicadorFiltro").innerHTML =  '<button class="btn btn-primary ms-5">Fecha de Inicio Asc</button>'; 
+});
+
+// Función que espera al click de sort.Fechadeentrega y reordena la vista
+document.getElementById("fechafides").addEventListener('click', function(){
+  actualizarTabla();
+  myTasks.sort((a, b) => (a.endDate > b.endDate) ? 1 : -1);
+  imprimirTabla();
+  document.getElementById("indicadorFiltro").innerHTML =  '<button class="btn btn-primary ms-5">Fecha de Entrega Desc</button>'; 
+});
+
+document.getElementById("fechafiasc").addEventListener('click', function(){
+  actualizarTabla();
+  myTasks.sort((a, b) => (a.endDate < b.endDate) ? 1 : -1);
+  imprimirTabla();
+  document.getElementById("indicadorFiltro").innerHTML =  '<button class="btn btn-primary ms-5">Fecha de Entrega Asc</button>'; 
+});
+
+// Función que espera al click de sort.Encargado y reordena la vista
+document.getElementById("encardes").addEventListener('click', function(){
+  actualizarTabla();
+  myTasks.sort((a, b) => (a.inChargeOf > b.inChargeOf) ? 1 : -1);
+  imprimirTabla();
+  document.getElementById("indicadorFiltro").innerHTML =  '<button class="btn btn-primary ms-5">Encargado Desc</button>'; 
+});
+
+document.getElementById("encarasc").addEventListener('click', function(){
+  actualizarTabla();
+  myTasks.sort((a, b) => (a.inChargeOf < b.inChargeOf) ? 1 : -1);
+  imprimirTabla();
+  document.getElementById("indicadorFiltro").innerHTML =  '<button class="btn btn-primary ms-5">Encargado Asc</button>'; 
+});
 
 
 

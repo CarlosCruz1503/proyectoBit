@@ -146,7 +146,7 @@
             </nav>
             <div class="container space-work">
                 <!-- Contenedor de Roadmap -->
-                <div class="container-fluid d-flex flex-column dg-card-color gap-2 mt-5 rounded p-4">
+                <div class="container-fluid d-flex flex-column dg-card-color gap-2 mt-5 rounded p-4 ms-5">
                     <!-- Nombre de la función -->
                     <div>
                         <h1 class="text-light">Roadmap de Tareas</h1>
@@ -179,16 +179,16 @@
                                         </ul>
                                     </div>
                                 </li>
-                                <li>
-                                <div class="btn-group dropend">
-                                    <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                                    Estado
-                                    </button>
-                                    <ul class="dropdown-menu">
-                                    <li><button class="dropdown-item" type="button">Ascendente</button></li>
-                                    <li><button class="dropdown-item" type="button">Descendente</button></li>
-                                    </ul>
-                                </div>
+                                <li style="display: none;">
+                                    <div class="btn-group dropend">
+                                        <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                                            Estado
+                                        </button>
+                                        <ul class="dropdown-menu">
+                                            <li><button id="estadoasc" class="dropdown-item" type="button">Ascendente</button></li>
+                                            <li><button id="estadodes" class="dropdown-item" type="button">Descendente</button></li>
+                                        </ul>
+                                    </div>
                                 </li>
                                 <li>
                                 <div class="btn-group dropend">
@@ -196,8 +196,8 @@
                                     Tipo
                                     </button>
                                     <ul class="dropdown-menu">
-                                    <li><button class="dropdown-item" type="button">Ascendente</button></li>
-                                    <li><button class="dropdown-item" type="button">Descendente</button></li>
+                                    <li><button id="tipoasc" class="dropdown-item" type="button">Ascendente</button></li>
+                                    <li><button id="tipodes" class="dropdown-item" type="button">Descendente</button></li>
                                     </ul>
                                 </div>
                                 </li>
@@ -207,8 +207,8 @@
                                     Fecha de Inicio
                                     </button>
                                     <ul class="dropdown-menu">
-                                    <li><button class="dropdown-item" type="button">Ascendente</button></li>
-                                    <li><button class="dropdown-item" type="button">Descendente</button></li>
+                                    <li><button id="fechainasc" class="dropdown-item" type="button">Ascendente</button></li>
+                                    <li><button id="fechaindes" class="dropdown-item" type="button">Descendente</button></li>
                                     </ul>
                                 </div>
                                 </li>
@@ -218,8 +218,8 @@
                                     Fecha de Entrega
                                     </button>
                                     <ul class="dropdown-menu">
-                                    <li><button class="dropdown-item" type="button">Ascendente</button></li>
-                                    <li><button class="dropdown-item" type="button">Descendente</button></li>
+                                    <li><button id="fechafiasc" class="dropdown-item" type="button">Ascendente</button></li>
+                                    <li><button id="fechafides" class="dropdown-item" type="button">Descendente</button></li>
                                     </ul>
                                 </div>
                                 </li>
@@ -229,8 +229,8 @@
                                     Encargado
                                     </button>
                                     <ul class="dropdown-menu">
-                                    <li><button class="dropdown-item" type="button">Ascendente</button></li>
-                                    <li><button class="dropdown-item" type="button">Descendente</button></li>
+                                    <li><button id="encarasc" class="dropdown-item" type="button">Ascendente</button></li>
+                                    <li><button id="encardes" class="dropdown-item" type="button">Descendente</button></li>
                                     </ul>
                                 </div>
                                 </li>
@@ -250,12 +250,12 @@
                     </div>
                     <!-- Nombre de la tabla(opcional) -->
                     <div class="d-flex gap-4 align-items-center">
-                    <h1 class="text-light">NombredeTabla</h1>
-                    <button class="btn btn-dark h-50">dots</button>
+                        <h1 class="text-light">NombredeTabla</h1>
+                        <button class="btn btn-dark h-50">dots</button>
                     </div>
                     <!-- Linea de Filtros aplicados-->
                     <div id="indicadorFiltro" class="d-flex">
-                    <button class="btn btn-dark ms-5">Filtro</button>
+                        <button class="btn btn-dark ms-5">Filtro</button>
                     </div>
                     <!-- Div de Tabla y Tabla -->
                     <div class="table-responsive dg-corner-border dg-nowrap">

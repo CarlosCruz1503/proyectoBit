@@ -160,3 +160,10 @@ document.getElementById("deshacer").addEventListener('click', function(){
   document.getElementById("indicadorFiltro").innerHTML =  '<button class="btn btn-dark ms-5">Sin Filtro</button>'; 
 });
 
+document.getElementById("completado").addEventListener('click', function(){
+  document.getElementById("inprogress").addEventListener('click', function(){
+    document.getElementById("completado").innerHTML =  '<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">En Progreso</button>';
+    actualizarTabla();
+    imprimirTabla();
+  });
+});

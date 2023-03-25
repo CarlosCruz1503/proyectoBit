@@ -142,7 +142,7 @@ h6 {
 .lateral-navbar {
   background: #363b45;
   width: 3.8rem;
-  position: absolute;
+  position: fixed;
   height: 100vh;
   left: 0;
   transition: width 0, 2s linear;
@@ -299,9 +299,6 @@ h6 {
 }
 .N-bg-segundo {
   background-color: #DCEDFF;
-}
-
-.N-week_contenedor{
 }
 .N-aside_contenedor {
   margin-left: 2rem;

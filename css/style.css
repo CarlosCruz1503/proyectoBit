@@ -301,8 +301,6 @@ h6 {
   background-color: #DCEDFF;
 }
 
-.N-week_contenedor{
-}
 .N-aside_contenedor {
   margin-left: 2rem;
 }
@@ -314,8 +312,9 @@ h6 {
   height: 3.5rem;
   margin: .5rem;
 }
-<<<<<<< HEAD
-
+.N-aside_input {
+  height: 6rem;
+}
 
 
 /* Estilos Daniel Guevara */
@@ -334,8 +333,14 @@ h6 {
 .dg-nowrap td{
   white-space:nowrap;
 }
-=======
-.N-aside_input {
-  height: 6rem;
+.dg-flex-wrap-personalized{
+  /* ... your existing flex container styles here */
+margin: -15px 0 0 0;
+} 
+/* add a corresponding positive top margin to all flex items (all direct children of the flex container) */
+.dg-flex-wrap-personalized> * {
+margin-top: 15px;
 }
->>>>>>> main
+
+
+

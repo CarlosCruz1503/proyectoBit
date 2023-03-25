@@ -276,3 +276,28 @@ h6 {
 .vacio {
   display: none;
 }
+
+/*Nicolas Habitos -----------------------------------------------------------------*/
+.N-bg-primero {
+  background-color: #8F91A2;
+}
+.N-bg-segundo {
+  background-color: #DCEDFF;
+}
+
+.N-week_contenedor{
+}
+.N-aside_contenedor {
+  margin-left: 2rem;
+}
+.N-week_rectangle {
+  height: 3.5rem;
+  margin: .15rem;
+}
+.N-aside_rectangle {
+  height: 3.5rem;
+  margin: .5rem;
+}
+.N-aside_input {
+  height: 6rem;
+}

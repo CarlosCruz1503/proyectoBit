@@ -1,120 +1,104 @@
 //modules??
 
 // Objeto para representar las filas de la tabla
+// cada objeto instanciado representa una fila
 class taskData {
 
     constructor(name, state, typeOfTask, startDate, endDate, inChargeOf) {
-      this._name = name;
-      this._state = state;
-      this._typeOfTask = typeOfTask;
-      this._startDate = startDate;
-      this._endDate = endDate;
-      this._inChargeOf = inChargeOf;
-    }
-  
-    get name() {
-      return this._name;
-    }
-  
-    set name(newValue) {
-      this._name = newValue;
-    }
-    get state() {
-      return this._state;
-    }
-  
-    set state(newValue) {
-      this._state = newValue;
-    }
-    get typeOfTask() {
-      return this._typeOfTask;
-    }
-  
-    set typeOfTask(newValue) {
-      this._typeOfTask = newValue;
-    }
-    get startDate() {
-      return this._startDate;
-    }
-  
-    set startDate(newValue) {
-      this._startDate = newValue;
-    }
 
-    get endDate() {
-      return this._endDate;
-    }
-  
-    set endDate(newValue) {
-      this._endDate = newValue;
-    }
-    get inChargeOf() {
-      return this._inChargeOf;
-    }
-  
-    set inChargeOf(newValue) {
-      this._inChargeOf = newValue;
+      this.name = name;
+      this.state = state;
+      this.typeOfTask = typeOfTask;
+      this.startDate = startDate;
+      this.endDate = endDate;
+      this.inChargeOf = inChargeOf;
     }
 
     getProperties(){
-        return [this._name, this._state, this._typeOfTask, this._startDate, this._endDate, this._inChargeOf]
+        return [this.name, this.state, this.typeOfTask, this.startDate, this.endDate, this.inChargeOf]
     }
   
-  }
+}
 
-const allTableRows = document.querySelectorAll("tr");
-var columns = [];
-var myarray2 = [];
-for (let i=0; i < 6; i++) {
-  columns = allTableRows[i+1].querySelectorAll("td");
-  console.log(columns[0].innerHTML);
-  for(let j=0; j< 6; j++){
-    myarray2[i][j] = columns[j].innerHTML;
+// Arreglo para almacenar las filas, es decir, es una representación de la tabla.
+// La variable Taskorig, guarda el estado inicial de la tabla para reiniciar los filtros.
+var myTasks = [];
+actualizarTabla();
+const myTasksorig = myTasks;
+
+// Función que captura los elementos actuales de la tabla y los guarda en en arreglo de objetos myTasks
+function actualizarTabla(){
+  myTasks = [];
+  const allTableRows = document.querySelectorAll("tr");
+  var myarray2 = [];
+  for (let i=0; i < allTableRows.length-1 ;  i++) {
+    let columns = [];
+    columns = allTableRows[i+1].querySelectorAll("td");
+    let auxArray = [];
+    for(let j=0; j < columns.length; j++){
+      auxArray.push(columns[j].innerHTML);
+    }
+    myTasks.push(new taskData());
+    let j=0;
+    for(let property1 in myTasks[i]){
+      myTasks[i][property1] = auxArray[j];
+      j++;
+    }
   }
 }
-console.log(myarray2[0][1]);
-// const myTask = new taskData(myarray2[0], myarray2[1], myarray2[2], myarray2[3], myarray2[4], myarray2[5]);
-// // Recorrer las propiedades del objeto
-// const myarray = myTask.getProperties();
-// for(let i = 0; i< myarray.length ; i++){
-//   console.log(myarray[0][1]);
-// }
+function imprimirTabla(){
+  const allTableRows = document.querySelectorAll("tr");
+  for (let i=0; i < allTableRows.length-1; i++) {
+    let columns = [];
+    columns = allTableRows[i+1].querySelectorAll("td");
+    let auxArray = myTasks[i].getProperties();
+    for(let j=0; j < columns.length; j++){
+      columns[j].innerHTML = auxArray[j];
+    }
+  }
+}
 
 
-// Obteniendo filas y guardandolas en arrays
-// const rowElement = document.getElementById("myRow");
-// const columns = rowElement.querySelectorAll("td");
-// var myarray2 = [];
+// Función que espera al click de sort.tarea y reordena la vista
+document.getElementById("tareades").addEventListener('click', function(){
+  actualizarTabla();
+  myTasks.sort((a, b) => (a.name > b.name) ? 1 : -1);
+  imprimirTabla();
+  document.getElementById("indicadorFiltro").innerHTML =  '<button class="btn btn-primary ms-5">Tarea Desc</button>'; 
+});
 
-// for (let i=0; i < columns.length; i++) {
-//   myarray2[i] = columns[i].innerHTML;
-// }
-// const myTask = new taskData(myarray2[0], myarray2[1], myarray2[2], myarray2[3], myarray2[4], myarray2[5]);
-// // Recorrer las propiedades del objeto
-// const myarray = myTask.getProperties();
-// for(let i = 0; i< myarray.length ; i++){
-//     console.log(myarray[i]);
-// }
+document.getElementById("tareaasc").addEventListener('click', function(){
+  actualizarTabla();
+  myTasks.sort((a, b) => (a.name < b.name) ? 1 : -1);
+  imprimirTabla();
+  document.getElementById("indicadorFiltro").innerHTML =  '<button class="btn btn-primary ms-5">Tarea Asc</button>'; 
+});
+
+// Función que espera al click de sort.estado y reordena la vista
+// document.getElementById("tareades").addEventListener('click', function(){
+//   actualizarTabla();
+//   myTasks.sort((a, b) => (a.name > b.name) ? 1 : -1);
+//   imprimirTabla();
+//   document.getElementById("indicadorFiltro").innerHTML =  '<button class="btn btn-primary ms-5">Tarea Desc</button>'; 
+// });
+
+// document.getElementById("tareaasc").addEventListener('click', function(){
+//   actualizarTabla();
+//   myTasks.sort((a, b) => (a.name < b.name) ? 1 : -1);
+//   imprimirTabla();
+//   document.getElementById("indicadorFiltro").innerHTML =  '<button class="btn btn-primary ms-5">Tarea Asc</button>'; 
+// });
+
+console.log(typeof(myTasks[0]["state"]));
 
 
-// Seleccionar y modificar los items del html
-// const rowElement = document.getElementById("myRow");
-// const columns = rowElement.querySelectorAll("td");
-
-// for (let i=0; i < columns.length; i++) {
-//     columns[i].innerHTML = myarray[i];
-// }
 
 
+// funcion para deshacer y retornar a la vista original de la tabla
+document.getElementById("deshacer").addEventListener('click', function(){
+  actualizarTabla();
+  myTasks = myTasksorig;
+  imprimirTabla();
+  document.getElementById("indicadorFiltro").innerHTML =  '<button class="btn btn-dark ms-5">Sin Filtro</button>'; 
+});
 
-
-// Imprimir propiedades del objeto
-// console.log(myObj.property1); // Output: "value1"
-// myObj.property1 = "new value1";
-// console.log(myObj.property1);
-
-
-// Función para modificar elementos de la tabla
-
-// var tdElement = document.getElementById("elementoPrueba");
-// tdElement.innerHTML = "Hola Mundo"

@@ -33,19 +33,80 @@
         <!-- Filter, Sort, Search -->
         <div class="d-flex flex-grow-1 justify-content-end pe-5 gap-2">
           <button class="btn btn-dark">Filter</button>
-
+          <!-- Desplegable de Sort -->
           <div class="dropdown">
-            <button class="btn btn-dark dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <button class="btn btn-dark dropdown-toggle" type="button" data-bs-toggle="dropdown" data-bs-auto-close="false" aria-expanded="false">
               Sort
             </button>
             <ul class="dropdown-menu">
-              <li><button class="dropdown-item" type="button">Tarea</button></li>
-              <li><button class="dropdown-item" type="button">Estado</button></li>
-              <li><button class="dropdown-item" type="button">Tipo</button></li>
-              <li><button class="dropdown-item" type="button">Fecha de Inicio</button></li>
-              <li><button class="dropdown-item" type="button">Fecha de Entrega</button></li>
-              <li><button class="dropdown-item" type="button">Encargado</button></li>
-              <li><button class="dropdown-item" type="button">Deshacer</button></li>
+              <!-- <li><button id="tarea" class="dropdown-item" type="button">Tarea</button></li> -->
+              <li>
+                <div class="btn-group dropend">
+                  <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                    Tarea
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><button id="tareaasc" class="dropdown-item" type="button">Ascendente</button></li>
+                    <li><button id="tareades" class="dropdown-item" type="button">Descendente</button></li>
+                  </ul>
+                </div>
+              </li>
+              <li>
+                <div class="btn-group dropend">
+                  <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                    Estado
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><button class="dropdown-item" type="button">Ascendente</button></li>
+                    <li><button class="dropdown-item" type="button">Descendente</button></li>
+                  </ul>
+                </div>
+              </li>
+              <li>
+                <div class="btn-group dropend">
+                  <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                    Tipo
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><button class="dropdown-item" type="button">Ascendente</button></li>
+                    <li><button class="dropdown-item" type="button">Descendente</button></li>
+                  </ul>
+                </div>
+              </li>
+              <li>
+                <div class="btn-group dropend">
+                  <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                    Fecha de Inicio
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><button class="dropdown-item" type="button">Ascendente</button></li>
+                    <li><button class="dropdown-item" type="button">Descendente</button></li>
+                  </ul>
+                </div>
+              </li>
+              <li>
+                <div class="btn-group dropend">
+                  <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                    Fecha de Entrega
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><button class="dropdown-item" type="button">Ascendente</button></li>
+                    <li><button class="dropdown-item" type="button">Descendente</button></li>
+                  </ul>
+                </div>
+              </li>
+              <li>
+                <div class="btn-group dropend">
+                  <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                    Encargado
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><button class="dropdown-item" type="button">Ascendente</button></li>
+                    <li><button class="dropdown-item" type="button">Descendente</button></li>
+                  </ul>
+                </div>
+              </li>
+              <li><button id="deshacer" class="dropdown-item" type="button">Deshacer</button></li>
             </ul>
           </div>
 
@@ -65,7 +126,7 @@
         <button class="btn btn-dark h-50">dots</button>
       </div>
       <!-- Linea de Filtros aplicados-->
-      <div class="d-flex">
+      <div id="indicadorFiltro" class="d-flex">
         <button class="btn btn-dark ms-5">Filtro</button>
       </div>
       <!-- Div de Tabla y Tabla -->

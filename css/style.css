@@ -65,6 +65,10 @@ h6 {
   position: relative;
 }
 
+.me-2{
+  width: 20rem;
+}
+
 .c-form-nav-input {
   background-color: #484E5C;
   outline: white;
@@ -138,7 +142,7 @@ h6 {
 .lateral-navbar {
   background: #363b45;
   width: 3.8rem;
-  position: absolute;
+  position: fixed;
   height: 100vh;
   left: 0;
   transition: width 0, 2s linear;
@@ -151,7 +155,11 @@ h6 {
     transition: all .5s ease;
   }
 
-}
+  .bit {
+    display: block;
+  }
+  }
+
 
 
 
@@ -169,6 +177,14 @@ h6 {
   color: #8d95a5;
   width: 300px;
   padding: 10px;
+}
+
+.link-lateral-navbar:hover{
+  color:#0ab3c2;
+}
+
+.color-blue{
+  color:#0ab3c2;
 }
 
 .material-icons {
@@ -276,3 +292,55 @@ h6 {
 .vacio {
   display: none;
 }
+
+/*Nicolas Habitos -----------------------------------------------------------------*/
+.N-bg-primero {
+  background-color: #8F91A2;
+}
+.N-bg-segundo {
+  background-color: #DCEDFF;
+}
+
+.N-aside_contenedor {
+  margin-left: 2rem;
+}
+.N-week_rectangle {
+  height: 3.5rem;
+  margin: .15rem;
+}
+.N-aside_rectangle {
+  height: 3.5rem;
+  margin: .5rem;
+}
+.N-aside_input {
+  height: 6rem;
+}
+
+
+/* Estilos Daniel Guevara */
+.dg-card-color{
+  background-color: rgb(54, 59, 69);
+}
+
+.dg-no-border-table{
+  border: solid 0px rgb(37, 37, 41);
+}
+
+.dg-corner-border{
+  border-radius: 18px;
+}
+
+.dg-nowrap td{
+  white-space:nowrap;
+}
+.dg-flex-wrap-personalized{
+  /* ... your existing flex container styles here */
+margin: -15px 0 0 0;
+} 
+/* add a corresponding positive top margin to all flex items (all direct children of the flex container) */
+.dg-flex-wrap-personalized> * {
+margin-top: 15px;
+}
+
+
+

@@ -50,8 +50,6 @@ function addDeleteBtn() {
 
     const items = document.querySelectorAll(".space-li");
 
-    console.log(items);
-
     if (items.length === 0) {
       empty.style.display = "block";
     }

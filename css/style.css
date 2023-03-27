@@ -294,23 +294,6 @@ h6 {
 }
 
 /*Nicolas Habitos -----------------------------------------------------------------*/
-:root {
-  --Primary: #00D2E5;
-  --Secundary: #0095FF;
-  --Tertiary: #F36ED6;
-  --Quaternary: #F39E6E;
-  --Senary: rgb(165, 110, 243);
-  --Body: #3A424A;
-  --Card: #363B45;
-  --Vacios: #5E6E78;
-  --Iconos: #8D95A5;
-  --Notificaciones: #D1D5DB;
-  --Light: #FFFFFF;
-  --Parrafos: #F1F2F4;
-  --Quinary: #FF3D71;
-  --Septenary: #00E096;
-  --Rectangle: 
-}
 .N-bg-primero {
   background-color: rgba(194, 200, 239, 0.501);
 }
@@ -327,22 +310,25 @@ h6 {
   padding: 0 0 0 3.5rem;
 }
 .carousel-control-prev-first {
-  padding: 0 8rem 0 0;
+  padding: 0 7.2rem 0 0;
 }
 .carousel-control-next-first {
-  padding: 0 0 0 8rem;
-}
-.N-week_txt {
-  font-size: .8rem;
-  padding: .6rem 0 0;
+  padding: 0 0 0 7.2rem;
 }
 .N-week_contenedor {
   background-color: #fff;
   padding: 0 1rem;
 }
+.N-week_txt {
+  font-size: .8rem;
+  padding: .6rem 0 0;
+}
 .N-week_rectangle {
   width: 2rem;
-  height: 2.9rem;
+  height: 2.74rem;
+}
+.N-week_input {
+  max-width: 98.2%;
 }
 @media (max-width: 950px) { 
   .N-week_title-span {
@@ -355,9 +341,20 @@ h6 {
   border: #ffffff solid .2rem;
   margin: 0 auto;
 }
+@media (max-width: 1200px) { 
+    .N-aside_contenedor {
+      margin: .75rem;
+      max-width: 96%;
+    }
+}
 .N-aside_rectangle {
   height: 2.1rem;
 }
 .N-aside_input {
   height: 2rem;
+}
+@media (max-width: 486px) { 
+  .N-aside_input, .N-aside_title {
+    height: 3rem;
+  }
 }

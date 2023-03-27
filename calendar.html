@@ -153,12 +153,21 @@
                                 <section class="N-bg-primero rounded-3 d-flex flex-column align-items-center container-fluid pt-1 pb-3"><!--WEEK-------------------------------------->
                                     <div class="N-week d-grip container-fluid p-2">
                                         <div class="d-flex justify-content-center mb-2"> <!--FECHA----------------------------------------------------------------------------->
-                                            <div class="bg-white rounded-1 p-1 w-100">
-                                                <p class="fw-bolder fs-5 text-start ps-3">HOY</p>
-                                                <p class="fw-light text-start ps-3">28 de Marzo</p>
+                                            <div class="bg-white rounded-1 p-1 w-100 d-flex justify-content-between">
+                                                <div>
+                                                    <p class="fw-bolder fs-5 text-start ps-3">HOY</p>
+                                                    <p class="fw-light text-start ps-3">28 de Marzo</p>
+                                                </div>
+                                                <div class="mt-3 me-4">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chart-arrows-vertical mb-3" width="25" height="25" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/> <path d="M18 21v-14" /><path d="M9 15l3 -3l3 3" />
+                                                        <path d="M15 10l3 -3l3 3" /><line x1="3" y1="21" x2="21" y2="21" /><line x1="12" y1="21" x2="12" y2="12" />
+                                                        <path d="M3 6l3 -3l3 3" /><path d="M6 21v-18" /></svg>
+                                                    <span class="material-symbols-outlined ms-3 me-1"> insights </span>
+                                                </div>
                                             </div>
                                         </div>
-                                            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel"><!--CARRUSEL--------------------------------------------------------------------------------------------------------------------->
+                                            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel"><!--CARRUSE-DIAS-MES--------------------------------------------------------------------------------------------------------------------->
                                                 <div class="carousel-inner">
                                                   <div class="carousel-item active">
                                                     <div class="row">
@@ -229,7 +238,7 @@
                                                   <span class="carousel-control-next-icon" aria-hidden="true"></span>
                                                   <span class="visually-hidden">Next</span>
                                                 </button>
-                                              </div><!--CARRUSEL--------------------------------------------------------------------------------------------------------------------->
+                                              </div><!--CARRUSEL-DIAS-MES-------------------------------------------------------------------------------------------------------------------->
                                               <div class="N-week_contenedor rounded-3"><!--CONTENIDO WEEK-->
                                                 <div> 
                                                     <!--TITULOS--> <div class="row">
@@ -337,16 +346,6 @@
                                                                         <div class="N-week_rectangle text-white fw-semibold border-bottom col"></div>
                                                                     </div>
                                                             <!--9--> <div class="row">
-                                                                        <div class="N-week_rectangle text-black fw-semibold border-bottom border-end col"><p class="N-week_txt">...</p> </div>
-                                                                        <div class="N-week_rectangle text-white fw-semibold border-bottom border-end col"></div>
-                                                                        <div class="N-week_rectangle text-white fw-semibold border-bottom border-end col"></div>
-                                                                        <div class="N-week_rectangle text-white fw-semibold border-bottom border-end col"></div>
-                                                                        <div class="N-week_rectangle text-white fw-semibold border-bottom border-end col"></div>
-                                                                        <div class="N-week_rectangle text-white fw-semibold border-bottom border-end col"></div>
-                                                                        <div class="N-week_rectangle text-white fw-semibold border-bottom border-end col"></div>
-                                                                        <div class="N-week_rectangle text-white fw-semibold border-bottom col"></div>
-                                                                    </div>
-                                                            <!--10--> <div class="row">
                                                                         <div class="N-week_rectangle text-black fw-semibold border-end col"><p class="N-week_txt">...</p> </div>
                                                                         <div class="N-week_rectangle text-white fw-semibold border-end col"></div>
                                                                         <div class="N-week_rectangle text-white fw-semibold border-end col"></div>
@@ -359,7 +358,7 @@
                                                     </div> 
                                               </div><!--CONTENIDO WEEK-->
                                     </div>
-                                    <div class="d-flex container-fluid justify-content-between rounded-3 bg-white mt-2 p-2">
+                                    <div class="d-flex container-fluid justify-content-between rounded-3 bg-white mt-2 p-2 N-week_input">
                                         <div class="text-center d-flex gap-1">
                                             <span class="material-symbols-outlined">add</span>
                                             <p>Agregar habito</p>
@@ -373,7 +372,7 @@
                                 </section><!--WEEK-------------------------------------->
                             </div>
 
-                            <div id="carouselExampleIndicators" class="carousel slide N-bg-primero rounded-3 col-12 col-xl-4" data-bs-ride="true"><!--CARRUSEL--------------------------------------------------------------------------------------------------------------------->
+                            <div id="carouselExampleIndicators" class="carousel slide N-bg-primero rounded-3 col-12 col-xl-4 N-aside_contenedor" data-bs-ride="true"><!--CARRUSEL-ASIDE-SECTION--------------------------------------------------------------------------------------------------------------------->
                                 <div class="carousel-indicators">
                                   <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                                   <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -382,8 +381,8 @@
                                   <div class="carousel-item active">
                                     <section class="d-flex flex-column align-items-center p-3 h-100"> <!--ASIDE SECTION------------------------------------------------------------------------------------------>
                                         <div class="container-fluid p-4 rounded-3 justify-content-around align-items-center">
-                                            <div class="N-aside_contenedor">
-                                                <div class="N-aside_rectangle fw-bold text-black rounded-3 text-center border-bottom border-3 mb-2 bg-white pt-1"> Define tu habito | Cantidad</div>
+                                            <div>
+                                                <div class="N-aside_rectangle N-aside_title fw-bold text-black rounded-3 text-center border-bottom border-3 mb-2 bg-white pt-1"> Define tu habito | Cantidad</div>
                                                 <input type="text" class="rounded-3 container-fluid mt-2 p-1 ps-2 border-0" placeholder="Habito">
                                                     <div class="d-flex gap-2 mt-3">
                                                         <select class="form-select">
@@ -395,11 +394,11 @@
                                                         <input type="text" class="rounded-3 container-fluid border-0" placeholder="Objetivo">
                                                     </div>
                                                     <div class="d-flex gap-2 mt-3 mb-2">
-                                                        <input type="number" min="0" max="10" class="rounded-3 w-50 ps-2 border-0" placeholder="Unidad (opcional)"> 
+                                                        <input type="number" min="0" max="10" class="rounded-3 w-50 ps-2 border-0" placeholder="Cantidad" required> 
                                                         <p class="text-white pt-3">en el dia.</p>
                                                     </div>
                                                     <p class="mt-2 text-white">Ej. 'Correr, al menos 5km en el dia'</p>
-                                                    <textarea name="" id="" cols="30" rows="10" class="container-fluid mt-2 rounded-3 p-3 border-0" placeholder="Description (opcional)"></textarea>
+                                                    <textarea name="" id="" cols="30" rows="8" class="container-fluid mt-2 rounded-3 p-3 border-0" placeholder="Description (opcional)"></textarea>
                                             </div>
                                             <div class="d-flex container-fluid justify-content-between p-3 rounded-3 bg-white mt-3 mb-3 N-aside_input align-items-center">
                                                 <div class="text-center d-flex gap-1">
@@ -418,8 +417,8 @@
                                   <div class="carousel-item">
                                     <section class="d-flex flex-column align-items-center p-3 h-100"> <!--ASIDE SECTION------------------------------------------------------------------------------------------>
                                         <div class="container-fluid p-4 rounded-3 justify-content-around align-items-center">
-                                            <div class="N-aside_contenedor">
-                                                <div class="N-aside_rectangle fw-bold text-black rounded-3 text-center border-bottom border-3 mb-2 bg-white pt-1"> Define tu habito | Cronometro</div>
+                                            <div>
+                                                <div class="N-aside_rectangle N-aside_title fw-bold text-black rounded-3 text-center border-bottom border-3 mb-2 bg-white pt-1"> Define tu habito | Cronometro</div>
                                                 <input type="text" class="rounded-3 container-fluid mt-2 p-1 ps-2 border-0" placeholder="Habito">
                                                     <div class="d-flex gap-2 mt-2">
                                                         <select class="form-select">
@@ -432,14 +431,14 @@
                                                     <div class="mt-2">
                                                         <div class="d-flex flex-column gap-2"> <label for="tiempo" class="text-white fw-bold">Tiempo:</label>
                                                                 <div class="d-flex gap-2">
-                                                                    <input type="time" id="tiempo" name="tiempo" step="3600" class="rounded-3 pt-2 p-2 border-0">
+                                                                    <input type="time" id="tiempo" name="tiempo" step="3600" class="rounded-3 pt-2~ p-2 border-0" required>
                                                                     <p class="text-white pt-3">en el dia.</p>
                                                                 </div>  
                                                         </div>
                                                         
                                                     </div>
                                                     <p class="mt-2 text-white">Ej. 'Meditar, al menos 30 minutos en el dia'</p>
-                                                    <textarea name="" id="" cols="30" rows="10" class="container-fluid mt-2 rounded-3 p-3" placeholder="Description (opcional)"></textarea>
+                                                    <textarea name="" id="" cols="30" rows="8" class="container-fluid mt-2 rounded-3 p-3" placeholder="Description (opcional)"></textarea>
                                             </div>
                                             <div class="d-flex container-fluid justify-content-between p-3 rounded-3 bg-white mt-3 mb-3 N-aside_input align-items-center">
                                                 <div class="text-center d-flex gap-1">
@@ -464,9 +463,9 @@
                                   <span class="carousel-control-next-icon" aria-hidden="true"></span>
                                   <span class="visually-hidden">Next</span>
                                 </button>
-                            </div>
+                            </div><!--CARRUSEL-ASIDE-SECTION--------------------------------------------------------------------------------------------------------------------->
                         </div>
-
+                    </div>   
                 </main>
             </div>
 

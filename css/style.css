@@ -312,7 +312,7 @@ h6 {
   --Rectangle: 
 }
 .N-bg-primero {
-  background-color: rgba(0, 1, 57, 0.408);
+  background-color: rgba(194, 200, 239, 0.501);
 }
 .N-bg-segundo {
   background-color: #DCEDFF;
@@ -336,15 +336,13 @@ h6 {
   font-size: .8rem;
   padding: .6rem 0 0;
 }
-.N-aside_contenedor {
-
+.N-week_contenedor {
+  background-color: #fff;
+  padding: 0 1rem;
 }
 .N-week_rectangle {
   width: 2rem;
   height: 2.9rem;
-}
-.N-week_title-span {
-
 }
 @media (max-width: 950px) { 
   .N-week_title-span {
@@ -352,9 +350,9 @@ h6 {
   }
 }
 .N-week_circle {
-  height: 1.5rem;
-  width: 1.5rem;
-  border: #143ee6 solid .1rem;
+  height: 1.6rem;
+  width: 1.6rem;
+  border: #ffffff solid .2rem;
   margin: 0 auto;
 }
 .N-aside_rectangle {

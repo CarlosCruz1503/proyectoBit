@@ -295,27 +295,69 @@ h6 {
 
 /*Nicolas Habitos -----------------------------------------------------------------*/
 .N-bg-primero {
-  background-color: #8F91A2;
+  background-color: var(--Card);
 }
 .N-bg-segundo {
-  background-color: #DCEDFF;
+  background-color: var(--Body);
 }
-
-.N-aside_contenedor {
-  margin-left: 2rem;
+.N-bg-tecero {
+  background-color: var(--Vacios);
+}
+.carousel-control-prev {
+  padding: 0 3.5rem 0 0;
+}
+.carousel-control-next {
+  padding: 0 0 0 3.5rem;
+}
+.carousel-control-prev-first {
+  padding: 0 7.2rem 0 0;
+}
+.carousel-control-next-first {
+  padding: 0 0 0 7.2rem;
+}
+.N-week_contenedor {
+  background-color: #fff;
+  padding: 0 1rem;
+}
+.N-week_txt {
+  font-size: .8rem;
+  padding: .6rem 0 0;
 }
 .N-week_rectangle {
-  height: 3.5rem;
-  margin: .15rem;
+  width: 2rem;
+  height: 2.74rem;
+}
+.N-week_input {
+  max-width: 98.2%;
+}
+@media (max-width: 950px) { 
+  .N-week_title-span {
+    display: none;
+  }
+}
+.N-week_circle {
+  height: 1.6rem;
+  width: 1.6rem;
+  border: #ffffff solid .2rem;
+  margin: 0 auto;
+}
+@media (max-width: 1200px) { 
+    .N-aside_contenedor {
+      margin: .75rem;
+      max-width: 96%;
+    }
 }
 .N-aside_rectangle {
-  height: 3.5rem;
-  margin: .5rem;
+  height: 2.1rem;
 }
 .N-aside_input {
-  height: 6rem;
+  height: 2rem;
 }
-
+@media (max-width: 486px) { 
+  .N-aside_input, .N-aside_title {
+    height: 3rem;
+  }
+}
 
 /* Estilos Daniel Guevara */
 .dg-card-color{

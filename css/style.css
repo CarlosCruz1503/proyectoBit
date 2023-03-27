@@ -294,26 +294,72 @@ h6 {
 }
 
 /*Nicolas Habitos -----------------------------------------------------------------*/
+:root {
+  --Primary: #00D2E5;
+  --Secundary: #0095FF;
+  --Tertiary: #F36ED6;
+  --Quaternary: #F39E6E;
+  --Senary: rgb(165, 110, 243);
+  --Body: #3A424A;
+  --Card: #363B45;
+  --Vacios: #5E6E78;
+  --Iconos: #8D95A5;
+  --Notificaciones: #D1D5DB;
+  --Light: #FFFFFF;
+  --Parrafos: #F1F2F4;
+  --Quinary: #FF3D71;
+  --Septenary: #00E096;
+  --Rectangle: 
+}
 .N-bg-primero {
-  background-color: #8F91A2;
+  background-color: rgba(0, 1, 57, 0.408);
 }
 .N-bg-segundo {
   background-color: #DCEDFF;
 }
-
-.N-week_contenedor{
+.N-bg-tecero {
+  background-color: var(--Vacios);
+}
+.carousel-control-prev {
+  padding: 0 3.5rem 0 0;
+}
+.carousel-control-next {
+  padding: 0 0 0 3.5rem;
+}
+.carousel-control-prev-first {
+  padding: 0 8rem 0 0;
+}
+.carousel-control-next-first {
+  padding: 0 0 0 8rem;
+}
+.N-week_txt {
+  font-size: .8rem;
+  padding: .6rem 0 0;
 }
 .N-aside_contenedor {
-  margin-left: 2rem;
+
 }
 .N-week_rectangle {
-  height: 3.5rem;
-  margin: .15rem;
+  width: 2rem;
+  height: 2.9rem;
+}
+.N-week_title-span {
+
+}
+@media (max-width: 950px) { 
+  .N-week_title-span {
+    display: none;
+  }
+}
+.N-week_circle {
+  height: 1.5rem;
+  width: 1.5rem;
+  border: #143ee6 solid .1rem;
+  margin: 0 auto;
 }
 .N-aside_rectangle {
-  height: 3.5rem;
-  margin: .5rem;
+  height: 2.1rem;
 }
 .N-aside_input {
-  height: 6rem;
+  height: 2rem;
 }

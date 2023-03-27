@@ -294,11 +294,27 @@ h6 {
 }
 
 /*Nicolas Habitos -----------------------------------------------------------------*/
+:root {
+  --Primary: #00D2E5;
+  --Secundary: #0095FF;
+  --Tertiary: #F36ED6;
+  --Quaternary: #F39E6E;
+  --Senary: #A56EF3;
+  --Body: #3A424A;
+  --Card: #363B45;
+  --Vacios: #5E6E78;
+  --Iconos: #8D95A5;
+  --Notificaciones: #D1D5DB;
+  --Light: #FFFFFF;
+  --Parrafos: #F1F2F4;
+  --Quinary: #FF3D71;
+  --Septenary: #00E096;
+}
 .N-bg-primero {
-  background-color: rgba(194, 200, 239, 0.501);
+  background-color: var(--Card);
 }
 .N-bg-segundo {
-  background-color: #DCEDFF;
+  background-color: var(--Body);
 }
 .N-bg-tecero {
   background-color: var(--Vacios);

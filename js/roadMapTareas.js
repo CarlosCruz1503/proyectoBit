@@ -21,16 +21,16 @@ class taskData {
 }
 
 // Arreglo para almacenar las filas, es decir, es una representación de la tabla.
-// La variable Taskorig, guarda el estado inicial de la tabla para reiniciar los filtros.
-var myTasks = [];
+// La letiable Taskorig, guarda el estado inicial de la tabla para reiniciar los filtros.
+let myTasks = [];
 actualizarTabla();
-var myTasksorig = myTasks;
+let myTasksorig = myTasks;
 
 // Función que captura los elementos actuales de la tabla y los guarda en en arreglo de objetos myTasks
 function actualizarTabla(){
   myTasks = [];
   const allTableRows = document.querySelectorAll("tr");
-  var myarray2 = [];
+  let myarray2 = [];
   for (let i=0; i < allTableRows.length-1 ;  i++) {
     let columns = [];
     columns = allTableRows[i+1].querySelectorAll("td");

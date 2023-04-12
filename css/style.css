@@ -142,7 +142,7 @@ h6 {
 .lateral-navbar {
   background: #363b45;
   width: 3.8rem;
-  position: absolute;
+  position: fixed;
   height: 100vh;
   left: 0;
   transition: width 0, 2s linear;
@@ -154,14 +154,12 @@ h6 {
     width: 13rem;
     transition: all .5s ease;
   }
+ 
 
   .bit {
     display: block;
   }
   }
-
-
-
 
 .main-logo {
   transition: all 0, 5s ease;
@@ -186,6 +184,7 @@ h6 {
 .color-blue{
   color:#0ab3c2;
 }
+
 
 .material-icons {
   width: 40px;
@@ -332,6 +331,7 @@ h6 {
   padding: 0 0 0 7.2rem;
 }
 .N-week_contenedor {
+  
   padding: 0 1rem;
 }
 .N-week_txt {
@@ -340,7 +340,7 @@ h6 {
 }
 .N-week_rectangle {
   width: 2rem;
-  height: 2.74rem;
+  height: 2.5rem;
 }
 .N-week_input {
   max-width: 98.2%;
@@ -349,12 +349,6 @@ h6 {
   .N-week_title-span {
     display: none;
   }
-}
-.N-week_circle {
-  height: 1.6rem;
-  width: 1.6rem;
-  border: #ffffff solid .2rem;
-  margin: 0 auto;
 }
 @media (max-width: 1200px) { 
     .N-aside_contenedor {
@@ -373,10 +367,51 @@ h6 {
     height: 3rem;
   }
 }
-
+.N-nivel_rectangle {
+  height: 3em;
+}
+.N-nivel_contenedor {
+  width: 35rem;
+}
 .N-nivel_exp {
-  width: 2.5rem;
+  width: 3rem;
+  height: 1rem;
 }
 .N-nivel_img {
-  width: 6rem;
+  background-image: url(../assets/img/avatar.png);
+  background-size: cover;
+  width: 5rem;
+  height: 5rem;
+} 
+.N-nivel_medalla {
+  width: 5.5rem;
+  height: 5.5rem;
 }
+/*--------------------------------------------------------------------------------------------------------------------*/
+/* Estilos Daniel Guevara */
+.dg-card-color{
+  background-color: rgb(54, 59, 69);
+}
+
+.dg-no-border-table{
+  border: solid 0px rgb(37, 37, 41);
+}
+
+.dg-corner-border{
+  border-radius: 18px;
+}
+
+.dg-nowrap td{
+  white-space:nowrap;
+}
+.dg-flex-wrap-personalized{
+  /* ... your existing flex container styles here */
+margin: -15px 0 0 0;
+} 
+/* add a corresponding positive top margin to all flex items (all direct children of the flex container) */
+.dg-flex-wrap-personalized> * {
+margin-top: 15px;
+}
+
+
+

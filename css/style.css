@@ -304,11 +304,9 @@ h6 {
 /*Nicolas Habitos -----------------------------------------------------------------*/
 .N-bg-primero {
   background-color: var(--Card);
+  color: var(--Card);
 }
 .N-bg-segundo {
-  background-color: var(--Body);
-}
-.N-bg-tecero {
   background-color: var(--Vacios);
 }
 .carousel-control-prev {
@@ -333,7 +331,7 @@ h6 {
 }
 .N-week_rectangle {
   width: 2rem;
-  height: 2.74rem;
+  height: 2.5rem;
 }
 .N-week_input {
   max-width: 98.2%;
@@ -366,7 +364,27 @@ h6 {
     height: 3rem;
   }
 }
-
+.N-nivel_rectangle {
+  height: 3em;
+}
+.N-nivel_contenedor {
+  width: 35rem;
+}
+.N-nivel_exp {
+  width: 3rem;
+  height: 1rem;
+}
+.N-nivel_img {
+  background-image: url(../assets/img/avatar.png);
+  background-size: cover;
+  width: 5rem;
+  height: 5rem;
+} 
+.N-nivel_medalla {
+  width: 5rem;
+  height: 5rem;
+}
+/*--------------------------------------------------------------------------------------------------------------------*/
 /* Estilos Daniel Guevara */
 .dg-card-color{
   background-color: rgb(54, 59, 69);

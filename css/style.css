@@ -154,14 +154,12 @@ h6 {
     width: 13rem;
     transition: all .5s ease;
   }
+ 
 
   .bit {
     display: block;
   }
   }
-
-
-
 
 .main-logo {
   transition: all 0, 5s ease;
@@ -186,6 +184,7 @@ h6 {
 .color-blue{
   color:#0ab3c2;
 }
+
 
 .material-icons {
   width: 40px;

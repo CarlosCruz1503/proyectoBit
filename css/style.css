@@ -332,7 +332,6 @@ h6 {
   padding: 0 0 0 7.2rem;
 }
 .N-week_contenedor {
-  background-color: #fff;
   padding: 0 1rem;
 }
 .N-week_txt {
@@ -373,4 +372,11 @@ h6 {
   .N-aside_input, .N-aside_title {
     height: 3rem;
   }
+}
+
+.N-nivel_exp {
+  width: 2.5rem;
+}
+.N-nivel_img {
+  width: 6rem;
 }
